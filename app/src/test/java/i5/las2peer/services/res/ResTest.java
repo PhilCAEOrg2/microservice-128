@@ -119,9 +119,7 @@ public class ResTest {
     try {
       c.setLogin(AnonymousAgentImpl.IDENTIFIER, "");
       ClientResponse result = c.sendRequest("GET", mainPath + "/test", """
-{
-  "abc": 123
-}""");
+""");
     
       System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
     } catch (Exception e) {
